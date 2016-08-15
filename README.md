@@ -11,7 +11,7 @@ This app uses Material Design components. Work is still going on. <br>
 <br>
 <br>
 
-<em>The layouts are complete for this app. So this is how it looks</em>
+<b>This is how it looks now</b>
 
 
 <br>
