@@ -8,5 +8,5 @@ Need to add code for notification and Database code needs some changes.
 <b>The layouts are complete for this app. So this is how it looks</b>
 
 
-1. <br>
-![Screenshot 1](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/Main.png "") 2. ![Screenshot 2](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/second.png "")
+<br>
+![Screenshot 1](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/Main.png "") &nbsp;&nbsp;&nbsp;&nbsp; ![Screenshot 2](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/second.png "")
