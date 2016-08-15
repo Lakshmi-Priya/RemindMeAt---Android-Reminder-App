@@ -9,7 +9,7 @@ This app uses Material Design components. Work is still going on. The app is alm
 <br>
 <br>
 
-The layouts are complete for this app. So this is how it looks
+<em>The layouts are complete for this app. So this is how it looks</em>
 
 
 <br>
