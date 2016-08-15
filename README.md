@@ -10,9 +10,9 @@ Need to add code for notification and Database code needs some changes.
 
 <br>
 ![Screenshot 1](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/Main.png "") 
-&nbsp;
+
 ![Screenshot 2](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/second.png "")
-&nbsp;
+
 ![Screenshot 3](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/time.png "")
-&nbsp;
+
 ![Screenshot 3](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/date.png "")
