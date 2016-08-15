@@ -1,6 +1,7 @@
-This is an App where you log your important works and it will remind you at the set time and date via a notification.
+Work Started on 15 August, 2015. <br>
 
-This app uses Material Design components. Work is still going on. The app is almost 50 percent complete. <br>
+This is an App where you log your important works and it will remind you at the set time and date via a notification.
+This app uses Material Design components. Work is still going on. <em></em> <br>
 <br><br>
 <b>Pending Work</b><br>
 1. Have to write code for notification.<br>
