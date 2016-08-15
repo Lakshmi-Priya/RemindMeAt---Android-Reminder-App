@@ -1,11 +1,12 @@
 This is an App where you log your important works and it will remind you at the set time and date via a notification.
 
-This app uses Material Design components. Work is still going on. The app is almost 60-70 percent complete. <br>
+This app uses Material Design components. Work is still going on. The app is almost 50 percent complete. <br>
 <br><br>
 <b>Pending Work</b><br>
-1. Have to write code for notification.
-2. Database codes needs changes.
-3. Have to add events delete option
+1. Have to write code for notification.<br>
+2. Database codes needs changes.<br>
+3. Have to add events delete option<br>
+4. Voice to Text feature for adding events 
 <br>
 <br>
 
