@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18c398</color>
+    <color name="colorPrimaryDark">#008371</color>
+    <color name="colorAccent">#795548</color>
+
+    <color name="AddEventBackground">#009c87</color>
+    <color name="AddEventBoxes">#01ab94</color>
+</resources>
