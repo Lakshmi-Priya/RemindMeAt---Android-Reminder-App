@@ -7,7 +7,8 @@ import io.realm.RealmObject;
  */
 public class EventModelDB extends RealmObject {
 
-    private String event, time, date;
+
+    private String event, time, date, timestamp;
 
 
     public EventModelDB() {
@@ -35,5 +36,13 @@ public class EventModelDB extends RealmObject {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
     }
 }

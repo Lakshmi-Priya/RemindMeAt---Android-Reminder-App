@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import com.asu.remind.R;
 import com.asu.remind.model.EventModelDB;
@@ -98,28 +99,37 @@ public class AddEvent extends AppCompatActivity {
                 String temp2= time.getText().toString();
                 String temp3= date.getText().toString();
 
+                if(temp1.length() > 0 && temp2.length() > 0 && temp3.length() > 0){
+                    Realm myRealm = Realm.getInstance(getBaseContext());
+                    myRealm.beginTransaction();
 
-                Realm myRealm = Realm.getInstance(getBaseContext());
-                myRealm.beginTransaction();
+                    // Create an object
+                    EventModelDB eventDetails = myRealm.createObject(EventModelDB.class);
 
-                // Create an object
-                EventModelDB eventDetails = myRealm.createObject(EventModelDB.class);
+                    // Set its fields
+                    eventDetails.setEvent(temp1);
+                    eventDetails.setTime(temp2);
+                    eventDetails.setDate(temp3);
 
-                // Set its fields
-                eventDetails.setEvent(temp1);
-                eventDetails.setTime(temp2);
-                eventDetails.setDate(temp3);
+                    Long tsLong = System.currentTimeMillis()/1000;
+                    String ts = tsLong.toString();
+                    eventDetails.setTimestamp(ts);
 
-                myRealm.commitTransaction();
+                    myRealm.commitTransaction();
+
+                    Toast.makeText(getBaseContext(), "Reminder Set for new Event", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(getBaseContext(), MainActivity.class));
 
 
-                // see the saved values in database
-                RealmResults<EventModelDB> results1 =
-                        myRealm.where(EventModelDB.class).findAll();
-
-                for(EventModelDB c:results1) {
-                    Log.d("results1", c.getEvent());
                 }
+
+
+                else{
+                    Toast.makeText(getBaseContext(), "Fill Up The Input fields", Toast.LENGTH_LONG).show();
+                }
+
+
+
 
 
             }

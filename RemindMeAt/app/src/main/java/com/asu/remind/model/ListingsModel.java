@@ -5,7 +5,7 @@ package com.asu.remind.model;
  */
 public class ListingsModel {
 
-    private String event, time, date;
+    private String event, time, date, timestamp;
 
     public String getEvent() {
         return event;
@@ -29,5 +29,13 @@ public class ListingsModel {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
     }
 }
