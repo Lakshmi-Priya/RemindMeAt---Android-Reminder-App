@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
         myRealm = Realm.getInstance(getBaseContext());
         results1 = myRealm.where(EventModelDB.class).findAll();
 
-        for(EventModelDB c:results1) {
+        for(int i = results1.size()-1;  i >= 0; i--) {
+            EventModelDB c = results1.get(i);
             model = new ListingsModel();
             model.setEvent(c.getEvent());
             model.setTime(c.getTime());
@@ -57,11 +58,12 @@ public class MainActivity extends AppCompatActivity {
             list.add(model);
         }
 
+
         adapter = new ListingsAdapter(list, getBaseContext());
         rvListings.setAdapter(adapter);
         mLayoutManager = new LinearLayoutManager(this);
-        mLayoutManager.setReverseLayout(true);
-        mLayoutManager.setStackFromEnd(true);
+     //   mLayoutManager.setReverseLayout(true);
+      //  mLayoutManager.setStackFromEnd(true);
         rvListings.setLayoutManager(mLayoutManager);
 
 

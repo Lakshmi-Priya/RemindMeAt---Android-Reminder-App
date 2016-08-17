@@ -1,6 +1,7 @@
 package com.asu.remind.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.asu.remind.R;
+import com.asu.remind.activity.MainActivity;
 import com.asu.remind.model.EventModelDB;
 import com.asu.remind.model.ListingsModel;
 
@@ -58,7 +60,7 @@ public class ListingsAdapter extends RecyclerView.Adapter<ListingsAdapter.Viewho
     }
 
     @Override
-    public void onBindViewHolder(Viewholder holder, final int position) {
+    public void onBindViewHolder(final Viewholder holder, final int position) {
 
         model = data.get(position);
 
@@ -73,7 +75,7 @@ public class ListingsAdapter extends RecyclerView.Adapter<ListingsAdapter.Viewho
                 // deleting the selected row from Realm database
                 Realm realm = Realm.getInstance(context);
                 RealmResults<EventModelDB> result = realm.where(EventModelDB.class)
-                        .equalTo("timestamp", model.getTimestamp())
+                        .equalTo("timestamp", data.get(position).getTimestamp())
                         .findAll();
 
                 if(result != null){
@@ -81,15 +83,17 @@ public class ListingsAdapter extends RecyclerView.Adapter<ListingsAdapter.Viewho
                         realm.beginTransaction();
                         result.remove(0);
                         realm.commitTransaction();
+
                     }
                 }
+                Log.i("clickedposn", ""+position);
 
                 // Delete the row data from the ArrayList passed to this Adapter
-                data.remove(position);
-                
-                // Refresh the RecyclerView after row deletion
-                notifyDataSetChanged();
+                 data.remove(position);
 
+                // Refresh the RecyclerView after row deletion
+                 notifyDataSetChanged();
+               // context.startActivity(new Intent(context, MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
 
 
                 return false;
