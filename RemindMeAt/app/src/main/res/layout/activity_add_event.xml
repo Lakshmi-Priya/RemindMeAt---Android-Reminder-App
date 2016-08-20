@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingTop="10dp"
     android:background="#eeeeee"
     >
 
@@ -28,8 +28,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Remind Me To"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="10dp"
                     />
+
+                <RelativeLayout
+                    android:id="@+id/speak"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_corners_background"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="70dp"
+                    android:layout_height="56dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_mic_white_48dp"
+                        />
+                </RelativeLayout>
 
                 <EditText
                     android:layout_marginLeft="16dp"

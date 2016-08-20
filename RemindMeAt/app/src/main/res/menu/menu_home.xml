@@ -9,6 +9,12 @@
         android:title="Add an Event"
         android:icon="@drawable/ic_create_white_24dp"
         app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/info"
+        android:orderInCategory="300"
+        android:title="Info"
+        android:icon="@drawable/ic_info_outline_white_24dp"
+        app:showAsAction="ifRoom"></item>
 
 </menu>
 

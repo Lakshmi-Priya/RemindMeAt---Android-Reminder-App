@@ -1,6 +1,7 @@
 package com.asu.remind.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -84,6 +85,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.add) {
             startActivity(new Intent(getBaseContext(), AddEvent.class));
+            return true;
+        }
+        else if (id == R.id.info) {
+            Snackbar.make(findViewById(android.R.id.content), "Long Press an event to delete it", Snackbar.LENGTH_LONG)
+                    .setActionTextColor(Color.WHITE)
+                    .show();
             return true;
         }
 

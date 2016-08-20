@@ -2,4 +2,5 @@
     <string name="app_name">RemindMeAt</string>
     <string name="title_activity_add_event">Add Event</string>
     <string name="title_activity_events_listing">All Events</string>
+    <string name="Reminder">Reminder</string>
 </resources>
