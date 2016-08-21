@@ -65,7 +65,7 @@ public class ListingsAdapter extends RecyclerView.Adapter<ListingsAdapter.Viewho
         model = data.get(position);
 
         holder.eventText.setText(model.getEvent());
-        holder.timeAndDateText.setText("At "+model.getTime() +" On "+model.getDate());
+        holder.timeAndDateText.setText("At  "+model.getTime() +"  On  "+model.getDate());
 
         // long click an item to delete it from database
         holder.toplayout.setOnLongClickListener(new View.OnLongClickListener() {

@@ -47,6 +47,7 @@
                 </RelativeLayout>
 
                 <EditText
+                    android:imeOptions="actionDone"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:padding="5dp"
@@ -70,6 +71,7 @@
                     />
 
                 <EditText
+                    android:focusable="false"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="10dp"
@@ -94,6 +96,7 @@
                     />
 
                 <EditText
+                    android:focusable="false"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="10dp"

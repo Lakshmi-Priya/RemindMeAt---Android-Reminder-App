@@ -96,9 +96,6 @@ public class AddEvent extends AppCompatActivity {
             c1 = Calendar.getInstance();
             mHour = c1.get(Calendar.HOUR_OF_DAY);
             mMinute = c1.get(Calendar.MINUTE);
-            formattedTime = FormatTime(mHour, mMinute);
-
-
 
                 // Launch Time Picker Dialog
             TimePickerDialog timePickerDialog = new TimePickerDialog(AddEvent.this,
@@ -107,6 +104,7 @@ public class AddEvent extends AppCompatActivity {
                         @Override
                        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
 
+                            formattedTime = FormatTime(hourOfDay, minute);
                             edtTime.setText(formattedTime);
                         }
                     }, mHour, mMinute, false);
@@ -232,6 +230,41 @@ public class AddEvent extends AppCompatActivity {
                 break;
             }
         }
+    }
+
+
+
+    public String FormatTime(int hour, int minute){
+
+        String time;
+        time = "";
+        String formattedMinute;
+
+        if(minute/10 == 0){
+            formattedMinute = "0"+minute;
+        }
+        else{
+            formattedMinute = ""+minute;
+        }
+
+
+        if(hour == 0){
+            time = "12" + ":" + formattedMinute + " AM";
+        }
+        else if(hour < 12){
+            time = hour + ":" + formattedMinute + " AM";
+        }
+        else if(hour == 12){
+            time = "12" + ":" + formattedMinute + " PM";
+        }
+        else{
+            int temp = hour - 12;
+            time = temp + ":" + formattedMinute + " PM";
+        }
+
+
+
+        return time;
     }
 
 

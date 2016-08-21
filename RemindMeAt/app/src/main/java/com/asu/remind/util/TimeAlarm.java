@@ -44,6 +44,7 @@ public class TimeAlarm extends BroadcastReceiver {
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(context)
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setLargeIcon(bigIcon)
+                .setAutoCancel(true)
                 .setContentTitle("Reminder")
                 .setContentText(event)
                 .setSound(defaultSoundUri)
