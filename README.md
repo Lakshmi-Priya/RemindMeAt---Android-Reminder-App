@@ -9,6 +9,9 @@ This app uses Material Design components and follows MVC architecture.<br>
 ![Screenshot 1](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/Main.png "") 
 ![Screenshot 2](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/second.png "")
 ![Screenshot 3](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/time.png "")
+
+<br>
+
 ![Screenshot 4](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/text2speech.png "")
 ![Screenshot 5](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/date.png "")
 ![Screenshot 6](https://github.com/Asutosh11/RemindMeAt---Android-Reminder-App/blob/master/Screenshots/notify.png "")
