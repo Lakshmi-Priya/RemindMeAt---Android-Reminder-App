@@ -1,6 +1,7 @@
 
 This is an App where you log your important works and it will remind you at the set time and date via a notification.
 This app uses Material Design components and follows MVC architecture.<br>
+For database requirement, I'm using Realm.
 <br><br>
 
 <b>This is how it looks</b>
