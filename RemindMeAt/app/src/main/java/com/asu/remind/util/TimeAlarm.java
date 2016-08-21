@@ -42,8 +42,9 @@ public class TimeAlarm extends BroadcastReceiver {
                 PendingIntent.getActivity(context, 1, intent2, PendingIntent.FLAG_ONE_SHOT);
 
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(context)
-                .setSmallIcon(R.mipmap.ic_launcher)
-                .setLargeIcon(bigIcon)
+                .setSmallIcon(R.drawable.small_notify_icon)
+                // .setLargeIcon(bigIcon)
+                .setColor(46254)
                 .setAutoCancel(true)
                 .setContentTitle("Reminder")
                 .setContentText(event)

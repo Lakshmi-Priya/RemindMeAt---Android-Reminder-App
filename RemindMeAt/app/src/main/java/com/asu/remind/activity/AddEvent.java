@@ -54,6 +54,7 @@ public class AddEvent extends AppCompatActivity {
     private SimpleDateFormat formatter;
     private Date date;
     private RelativeLayout rlSpeak;
+    private String timeToNotify;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +105,7 @@ public class AddEvent extends AppCompatActivity {
                         @Override
                        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
 
+                            timeToNotify = hourOfDay+":"+minute;
                             formattedTime = FormatTime(hourOfDay, minute);
                             edtTime.setText(formattedTime);
                         }
@@ -201,7 +203,7 @@ public class AddEvent extends AppCompatActivity {
 
         try {
             // Convert the set date and time to timestamp
-            toParse = dateEntered + " " + timeEntered;
+            toParse = dateEntered + " " + timeToNotify;
             formatter = new SimpleDateFormat("d-M-yyyy hh:mm");
             date = formatter.parse(toParse);
             tsSet = date.getTime();
